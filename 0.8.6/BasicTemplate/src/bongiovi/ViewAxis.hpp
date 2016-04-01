@@ -10,8 +10,6 @@
 #define ViewAxis_hpp
 
 #include <stdio.h>
-
-#include "cinder/gl/Texture.h"
 #include "View.hpp"
 
 using namespace bongiovi;

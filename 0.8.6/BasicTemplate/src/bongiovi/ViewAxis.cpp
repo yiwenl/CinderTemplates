@@ -59,6 +59,5 @@ void ViewAxis::_init() {
 void ViewAxis::render() {
     shader->bind();
     gl::draw(mesh);
-    
     shader->unbind();
 }

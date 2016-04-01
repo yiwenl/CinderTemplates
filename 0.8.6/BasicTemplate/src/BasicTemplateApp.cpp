@@ -2,6 +2,7 @@
 #include "cinder/gl/gl.h"
 #include "bongiovi/Scene.hpp"
 #include "bongiovi/ViewAxis.hpp"
+#include "bongiovi/ViewDotsPlane.hpp"
 #include "cinder/Camera.h"
 
 using namespace ci;
@@ -22,6 +23,7 @@ class BasicTemplateApp : public AppNative {
     float time = 0.0f;
     Scene* _scene;
     ViewAxis* _vAxis;
+    ViewDotsPlane* _vDotsPlane;
 };
 
 void BasicTemplateApp::setup()
@@ -38,6 +40,7 @@ void BasicTemplateApp::setup()
     camera->lookAt(Vec3f(0.0, 0.0, -5.0), Vec3f(0.0, 0.0, 0.0));
     
     _vAxis = new ViewAxis();
+    _vDotsPlane = new ViewDotsPlane();
 }
 
 void BasicTemplateApp::mouseDown( MouseEvent event )
@@ -63,6 +66,7 @@ void BasicTemplateApp::draw()
     
     
     _vAxis->render();
+    _vDotsPlane->render();
 }
 
 CINDER_APP_NATIVE( BasicTemplateApp, RendererGl )
