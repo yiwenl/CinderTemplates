@@ -17,7 +17,6 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		A223C6121CAF2B86000A92FC /* common in Resources */ = {isa = PBXBuildFile; fileRef = A223C6101CAF2B86000A92FC /* common */; };
 		A223C6131CAF2B86000A92FC /* shaders in Resources */ = {isa = PBXBuildFile; fileRef = A223C6111CAF2B86000A92FC /* shaders */; };
-		A223C6181CAF2BBB000A92FC /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A223C6161CAF2BBB000A92FC /* Scene.cpp */; };
 		A223C61F1CAF31E9000A92FC /* ViewAxis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A223C61D1CAF31E9000A92FC /* ViewAxis.cpp */; };
 		A223C6221CAF33FE000A92FC /* ViewDotsPlane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A223C6201CAF33FE000A92FC /* ViewDotsPlane.cpp */; };
 		A223C6251CAFB241000A92FC /* OrbitalControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A223C6231CAFB241000A92FC /* OrbitalControl.cpp */; };
@@ -47,7 +46,6 @@
 		8D1107320486CEB800E47090 /* BasicTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A223C6101CAF2B86000A92FC /* common */ = {isa = PBXFileReference; lastKnownFileType = folder; name = common; path = ../assets/common; sourceTree = "<group>"; };
 		A223C6111CAF2B86000A92FC /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = shaders; path = ../assets/shaders; sourceTree = "<group>"; };
-		A223C6161CAF2BBB000A92FC /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Scene.cpp; path = ../src/bongiovi/Scene.cpp; sourceTree = "<group>"; };
 		A223C6171CAF2BBB000A92FC /* Scene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Scene.hpp; path = ../src/bongiovi/Scene.hpp; sourceTree = "<group>"; };
 		A223C61B1CAF3058000A92FC /* View.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = View.hpp; path = ../src/bongiovi/View.hpp; sourceTree = "<group>"; };
 		A223C61D1CAF31E9000A92FC /* ViewAxis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ViewAxis.cpp; path = ../src/bongiovi/ViewAxis.cpp; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 		A223C6191CAF2D00000A92FC /* bongiovi */ = {
 			isa = PBXGroup;
 			children = (
-				A223C6161CAF2BBB000A92FC /* Scene.cpp */,
 				A223C6171CAF2BBB000A92FC /* Scene.hpp */,
 				A223C61B1CAF3058000A92FC /* View.hpp */,
 				A223C61D1CAF31E9000A92FC /* ViewAxis.cpp */,
@@ -272,7 +269,6 @@
 				A223C61F1CAF31E9000A92FC /* ViewAxis.cpp in Sources */,
 				A2FFEB601CB003F600E4B73D /* QuatRotation.cpp in Sources */,
 				A2FFEB5D1CB0008A00E4B73D /* ViewBall.cpp in Sources */,
-				A223C6181CAF2BBB000A92FC /* Scene.cpp in Sources */,
 				A223C62D1CAFDD6C000A92FC /* Geom.cpp in Sources */,
 				A223C6221CAF33FE000A92FC /* ViewDotsPlane.cpp in Sources */,
 				E0B3ECD729EB4265A377A725 /* BasicTemplateApp.cpp in Sources */,

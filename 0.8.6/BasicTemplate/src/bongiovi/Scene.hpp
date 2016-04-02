@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include "cinder/App/App.h"
 #include "cinder/Camera.h"
+#include "OrbitalControl.hpp"
 
 using namespace ci;
 using namespace ci::app;
@@ -22,24 +23,41 @@ namespace bongiovi {
     class Scene {
         public:
         
-        Scene();
+        Scene() {
+            _init();
+        }
         
-        void    update();
-        void    render();
         CameraPersp* camera;
         CameraOrtho* cameraOrtho;
-        
+        OrbitalControl* orbitalControl;
+        void    render();
+        void    update() {
+            gl::setMatrices(*camera);
+        }
         
         private:
         
-        void    _init();
-        void    _initTextures();
-        void    _initViews();
-        void    _loop();
+        void    _init() {
+            //  window
+            app::WindowRef window = getWindow();
+            
+            //  loop bind
+            mCbUpdate       = window->getSignalDraw().connect( std::bind(&Scene::_loop, this));
+            
+            //  camera
+            camera = new CameraPersp();
+            camera->setPerspective(120, getWindowAspectRatio(), .1, 100);
+            cameraOrtho = new CameraOrtho();
+            cameraOrtho->setOrtho( -1, 1, 1, -1, -1, 1 );
+            
+            orbitalControl = new OrbitalControl(camera);
+        }
         
-        void	windowDraw();
+        void    _loop() {
+            update();
+        }
         
-        signals::scoped_connection	mCbMouseDown, mCbMouseDrag, mCbMouseUp, mCbMouseMove, mCbMouseWheel, mCbUpdate;
+        signals::scoped_connection mCbUpdate;
     };
 }
 
