@@ -20,8 +20,8 @@ public:
     ViewDotsPlane(string vsPath, string fsPath);
     virtual void            render();
     
-    Vec3f   color           = Vec3f(0.5, 0.5, 0.5);
-    float   opacity         = 1.0;
+    Vec3f   color           = Vec3f(1.0, 1.0, 1.0);
+    float   opacity         = 0.5;
     
 private:
     void                    _init();

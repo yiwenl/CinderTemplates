@@ -39,7 +39,7 @@ namespace bongiovi {
         
         void	windowDraw();
         
-        signals::scoped_connection mCbUpdate;
+        signals::scoped_connection	mCbMouseDown, mCbMouseDrag, mCbMouseUp, mCbMouseMove, mCbMouseWheel, mCbUpdate;
     };
 }
 
