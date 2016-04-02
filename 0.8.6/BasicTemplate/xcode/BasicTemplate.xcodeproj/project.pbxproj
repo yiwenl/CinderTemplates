@@ -18,7 +18,6 @@
 		A223C6121CAF2B86000A92FC /* common in Resources */ = {isa = PBXBuildFile; fileRef = A223C6101CAF2B86000A92FC /* common */; };
 		A223C6131CAF2B86000A92FC /* shaders in Resources */ = {isa = PBXBuildFile; fileRef = A223C6111CAF2B86000A92FC /* shaders */; };
 		A223C6181CAF2BBB000A92FC /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A223C6161CAF2BBB000A92FC /* Scene.cpp */; };
-		A223C61C1CAF3058000A92FC /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A223C61A1CAF3058000A92FC /* View.cpp */; };
 		A223C61F1CAF31E9000A92FC /* ViewAxis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A223C61D1CAF31E9000A92FC /* ViewAxis.cpp */; };
 		A223C6221CAF33FE000A92FC /* ViewDotsPlane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A223C6201CAF33FE000A92FC /* ViewDotsPlane.cpp */; };
 		A223C6251CAFB241000A92FC /* OrbitalControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A223C6231CAFB241000A92FC /* OrbitalControl.cpp */; };
@@ -46,7 +45,6 @@
 		A223C6111CAF2B86000A92FC /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = shaders; path = ../assets/shaders; sourceTree = "<group>"; };
 		A223C6161CAF2BBB000A92FC /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Scene.cpp; path = ../src/bongiovi/Scene.cpp; sourceTree = "<group>"; };
 		A223C6171CAF2BBB000A92FC /* Scene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Scene.hpp; path = ../src/bongiovi/Scene.hpp; sourceTree = "<group>"; };
-		A223C61A1CAF3058000A92FC /* View.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = View.cpp; path = ../src/bongiovi/View.cpp; sourceTree = "<group>"; };
 		A223C61B1CAF3058000A92FC /* View.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = View.hpp; path = ../src/bongiovi/View.hpp; sourceTree = "<group>"; };
 		A223C61D1CAF31E9000A92FC /* ViewAxis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ViewAxis.cpp; path = ../src/bongiovi/ViewAxis.cpp; sourceTree = "<group>"; };
 		A223C61E1CAF31E9000A92FC /* ViewAxis.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ViewAxis.hpp; path = ../src/bongiovi/ViewAxis.hpp; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 			children = (
 				A223C6161CAF2BBB000A92FC /* Scene.cpp */,
 				A223C6171CAF2BBB000A92FC /* Scene.hpp */,
-				A223C61A1CAF3058000A92FC /* View.cpp */,
 				A223C61B1CAF3058000A92FC /* View.hpp */,
 				A223C61D1CAF31E9000A92FC /* ViewAxis.cpp */,
 				A223C61E1CAF31E9000A92FC /* ViewAxis.hpp */,
@@ -250,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A223C61C1CAF3058000A92FC /* View.cpp in Sources */,
 				A223C6251CAFB241000A92FC /* OrbitalControl.cpp in Sources */,
 				A223C61F1CAF31E9000A92FC /* ViewAxis.cpp in Sources */,
 				A223C6181CAF2BBB000A92FC /* Scene.cpp in Sources */,
