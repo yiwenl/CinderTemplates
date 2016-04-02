@@ -24,6 +24,7 @@
 		A223C62D1CAFDD6C000A92FC /* Geom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A223C62B1CAFDD6C000A92FC /* Geom.cpp */; };
 		A223C6301CAFEE26000A92FC /* ViewTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A223C62E1CAFEE26000A92FC /* ViewTest.cpp */; };
 		A2FFEB5D1CB0008A00E4B73D /* ViewBall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2FFEB5B1CB0008A00E4B73D /* ViewBall.cpp */; };
+		A2FFEB601CB003F600E4B73D /* QuatRotation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2FFEB5E1CB003F600E4B73D /* QuatRotation.cpp */; };
 		B1FDF608F7DC441081B0E45D /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 05F5B880ACA142D3B896743B /* CinderApp.icns */; };
 		E0B3ECD729EB4265A377A725 /* BasicTemplateApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1801097AD49C462C879BCC08 /* BasicTemplateApp.cpp */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,8 @@
 		A223C62F1CAFEE26000A92FC /* ViewTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ViewTest.hpp; path = ../src/ViewTest.hpp; sourceTree = "<group>"; };
 		A2FFEB5B1CB0008A00E4B73D /* ViewBall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ViewBall.cpp; path = ../src/bongiovi/ViewBall.cpp; sourceTree = "<group>"; };
 		A2FFEB5C1CB0008A00E4B73D /* ViewBall.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ViewBall.hpp; path = ../src/bongiovi/ViewBall.hpp; sourceTree = "<group>"; };
+		A2FFEB5E1CB003F600E4B73D /* QuatRotation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = QuatRotation.cpp; path = ../src/bongiovi/QuatRotation.cpp; sourceTree = "<group>"; };
+		A2FFEB5F1CB003F600E4B73D /* QuatRotation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = QuatRotation.hpp; path = ../src/bongiovi/QuatRotation.hpp; sourceTree = "<group>"; };
 		ED43B04F36234A4986DA4627 /* BasicTemplate_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = BasicTemplate_Prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +196,8 @@
 				A223C62C1CAFDD6C000A92FC /* Geom.hpp */,
 				A2FFEB5B1CB0008A00E4B73D /* ViewBall.cpp */,
 				A2FFEB5C1CB0008A00E4B73D /* ViewBall.hpp */,
+				A2FFEB5E1CB003F600E4B73D /* QuatRotation.cpp */,
+				A2FFEB5F1CB003F600E4B73D /* QuatRotation.hpp */,
 			);
 			name = bongiovi;
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 				A223C6301CAFEE26000A92FC /* ViewTest.cpp in Sources */,
 				A223C6251CAFB241000A92FC /* OrbitalControl.cpp in Sources */,
 				A223C61F1CAF31E9000A92FC /* ViewAxis.cpp in Sources */,
+				A2FFEB601CB003F600E4B73D /* QuatRotation.cpp in Sources */,
 				A2FFEB5D1CB0008A00E4B73D /* ViewBall.cpp in Sources */,
 				A223C6181CAF2BBB000A92FC /* Scene.cpp in Sources */,
 				A223C62D1CAFDD6C000A92FC /* Geom.cpp in Sources */,

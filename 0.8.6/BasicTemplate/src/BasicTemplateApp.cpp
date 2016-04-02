@@ -6,6 +6,7 @@
 #include "bongiovi/ViewDotsPlane.hpp"
 #include "bongiovi/ViewBall.hpp"
 #include "bongiovi/OrbitalControl.hpp"
+#include "bongiovi/QuatRotation.hpp"
 #include "ViewTest.hpp"
 
 using namespace ci;
@@ -29,6 +30,8 @@ class BasicTemplateApp : public AppNative {
     ViewDotsPlane* _vDotsPlane;
     ViewBall*   _vBall;
     ViewTest*   _vTest;
+    
+    QuatRotation* _rotation;
 };
 
 void BasicTemplateApp::setup()
@@ -44,8 +47,16 @@ void BasicTemplateApp::setup()
     
     camera = new CameraPersp();
     camera->setPerspective(90, getWindowAspectRatio(), .25, 500);
+    camera->lookAt(Vec3f(0, 0, 10), Vec3f(0, 0, 0));
     
-    new OrbitalControl(camera);
+//    new OrbitalControl(camera);
+    
+    _rotation = new QuatRotation();
+    
+    Vec3f axis = Vec3f(1.0, 1.0, 0.0);
+    Quatf q(Vec3f(1.0, 1.0, 0.0), M_PI * .25);
+    cout << q << endl;
+    _rotation->moveTo(q);
     
     _vAxis = new ViewAxis();
     _vDotsPlane = new ViewDotsPlane();
@@ -68,6 +79,7 @@ void BasicTemplateApp::draw()
     time += 0.05;
 	gl::clear( Color( 0, 0, 0 ) );
     gl::setMatrices(*camera);
+    gl::rotate(_rotation->getRotation());
     _vAxis->render();
     _vDotsPlane->render();
     
