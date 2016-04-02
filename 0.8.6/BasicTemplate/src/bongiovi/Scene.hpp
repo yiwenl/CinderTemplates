@@ -13,6 +13,7 @@
 #include "cinder/App/App.h"
 #include "cinder/Camera.h"
 #include "OrbitalControl.hpp"
+#include "QuatRotation.hpp"
 
 using namespace ci;
 using namespace ci::app;
@@ -30,7 +31,8 @@ namespace bongiovi {
         CameraPersp* camera;
         CameraOrtho* cameraOrtho;
         OrbitalControl* orbitalControl;
-        void    render();
+        QuatRotation* quatRotation;
+
         void    update() {
             gl::setMatrices(*camera);
         }
@@ -46,11 +48,13 @@ namespace bongiovi {
             
             //  camera
             camera = new CameraPersp();
-            camera->setPerspective(120, getWindowAspectRatio(), .1, 100);
+            camera->setPerspective(90, getWindowAspectRatio(), .1, 100);
             cameraOrtho = new CameraOrtho();
             cameraOrtho->setOrtho( -1, 1, 1, -1, -1, 1 );
             
-            orbitalControl = new OrbitalControl(camera);
+            orbitalControl  = new OrbitalControl(camera);
+            quatRotation    = new QuatRotation();
+            quatRotation->lock(true);
         }
         
         void    _loop() {
