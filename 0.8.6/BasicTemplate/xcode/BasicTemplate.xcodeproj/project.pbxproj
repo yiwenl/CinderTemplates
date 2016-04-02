@@ -21,6 +21,8 @@
 		A223C61F1CAF31E9000A92FC /* ViewAxis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A223C61D1CAF31E9000A92FC /* ViewAxis.cpp */; };
 		A223C6221CAF33FE000A92FC /* ViewDotsPlane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A223C6201CAF33FE000A92FC /* ViewDotsPlane.cpp */; };
 		A223C6251CAFB241000A92FC /* OrbitalControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A223C6231CAFB241000A92FC /* OrbitalControl.cpp */; };
+		A223C62D1CAFDD6C000A92FC /* Geom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A223C62B1CAFDD6C000A92FC /* Geom.cpp */; };
+		A223C6301CAFEE26000A92FC /* ViewTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A223C62E1CAFEE26000A92FC /* ViewTest.cpp */; };
 		B1FDF608F7DC441081B0E45D /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 05F5B880ACA142D3B896743B /* CinderApp.icns */; };
 		E0B3ECD729EB4265A377A725 /* BasicTemplateApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1801097AD49C462C879BCC08 /* BasicTemplateApp.cpp */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,10 @@
 		A223C6231CAFB241000A92FC /* OrbitalControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OrbitalControl.cpp; path = ../src/bongiovi/OrbitalControl.cpp; sourceTree = "<group>"; };
 		A223C6241CAFB241000A92FC /* OrbitalControl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = OrbitalControl.hpp; path = ../src/bongiovi/OrbitalControl.hpp; sourceTree = "<group>"; };
 		A223C6271CAFB6D1000A92FC /* EaseNumber.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = EaseNumber.hpp; path = ../src/bongiovi/EaseNumber.hpp; sourceTree = "<group>"; };
+		A223C62B1CAFDD6C000A92FC /* Geom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Geom.cpp; path = ../src/bongiovi/Geom.cpp; sourceTree = "<group>"; };
+		A223C62C1CAFDD6C000A92FC /* Geom.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Geom.hpp; path = ../src/bongiovi/Geom.hpp; sourceTree = "<group>"; };
+		A223C62E1CAFEE26000A92FC /* ViewTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ViewTest.cpp; path = ../src/ViewTest.cpp; sourceTree = "<group>"; };
+		A223C62F1CAFEE26000A92FC /* ViewTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ViewTest.hpp; path = ../src/ViewTest.hpp; sourceTree = "<group>"; };
 		ED43B04F36234A4986DA4627 /* BasicTemplate_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = BasicTemplate_Prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +93,8 @@
 			children = (
 				A223C6191CAF2D00000A92FC /* bongiovi */,
 				1801097AD49C462C879BCC08 /* BasicTemplateApp.cpp */,
+				A223C62E1CAFEE26000A92FC /* ViewTest.cpp */,
+				A223C62F1CAFEE26000A92FC /* ViewTest.hpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -178,6 +186,8 @@
 				A223C6231CAFB241000A92FC /* OrbitalControl.cpp */,
 				A223C6241CAFB241000A92FC /* OrbitalControl.hpp */,
 				A223C6271CAFB6D1000A92FC /* EaseNumber.hpp */,
+				A223C62B1CAFDD6C000A92FC /* Geom.cpp */,
+				A223C62C1CAFDD6C000A92FC /* Geom.hpp */,
 			);
 			name = bongiovi;
 			sourceTree = "<group>";
@@ -247,9 +257,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A223C6301CAFEE26000A92FC /* ViewTest.cpp in Sources */,
 				A223C6251CAFB241000A92FC /* OrbitalControl.cpp in Sources */,
 				A223C61F1CAF31E9000A92FC /* ViewAxis.cpp in Sources */,
 				A223C6181CAF2BBB000A92FC /* Scene.cpp in Sources */,
+				A223C62D1CAFDD6C000A92FC /* Geom.cpp in Sources */,
 				A223C6221CAF33FE000A92FC /* ViewDotsPlane.cpp in Sources */,
 				E0B3ECD729EB4265A377A725 /* BasicTemplateApp.cpp in Sources */,
 			);

@@ -5,6 +5,7 @@
 #include "bongiovi/ViewAxis.hpp"
 #include "bongiovi/ViewDotsPlane.hpp"
 #include "bongiovi/OrbitalControl.hpp"
+#include "ViewTest.hpp"
 
 using namespace ci;
 using namespace ci::app;
@@ -25,6 +26,8 @@ class BasicTemplateApp : public AppNative {
     Scene* _scene;
     ViewAxis* _vAxis;
     ViewDotsPlane* _vDotsPlane;
+    
+    ViewTest*   _vTest;
 };
 
 void BasicTemplateApp::setup()
@@ -35,18 +38,18 @@ void BasicTemplateApp::setup()
     setWindowSize(1280, 720);
     setFrameRate(60);
     gl::enableAlphaBlending();
+    gl::enable(GL_CULL_FACE);
+    gl::enable(GL_DEPTH_TEST);
     
     camera = new CameraPersp();
     camera->setPerspective(90, getWindowAspectRatio(), .25, 500);
     
     new OrbitalControl(camera);
     
-//    camera->lookAt(Vec3f(0.0, 0.0, -5.0), Vec3f(0.0, 0.0, 0.0));
-    
-    
-    
     _vAxis = new ViewAxis();
     _vDotsPlane = new ViewDotsPlane();
+    
+    _vTest = new ViewTest();
 }
 
 void BasicTemplateApp::mouseDown( MouseEvent event )
@@ -64,6 +67,8 @@ void BasicTemplateApp::draw()
     gl::setMatrices(*camera);
     _vAxis->render();
     _vDotsPlane->render();
+    
+    _vTest->render();
 }
 
 CINDER_APP_NATIVE( BasicTemplateApp, RendererGl )
